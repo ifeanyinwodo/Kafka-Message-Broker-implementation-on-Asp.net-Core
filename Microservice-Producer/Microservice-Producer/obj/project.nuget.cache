@@ -1,15 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "7BwgFq/hF4U94ghZEFY5VTmyWPTNuxV/BECRoSfkqJ013DdlxM4ZsyHFXaI7WmBf6l95lywSA/jcFDXPKplPqQ==",
+  "dgSpecHash": "+M78ZS9ZJ08hizVusLUTJG4j5RiynsLNRwuaHc/7OhOuaHH3QyeveoTlBIN9+llLEnwTQqEac0Ffy/7UkyImhA==",
   "success": true,
   "projectFilePath": "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\Microservice-Producer\\Microservice-Producer\\Microservice-Producer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\confluent.kafka\\1.7.0-rc4\\confluent.kafka.1.7.0-rc4.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\librdkafka.redist\\1.7.0-rc4\\librdkafka.redist.1.7.0-rc4.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
-    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
