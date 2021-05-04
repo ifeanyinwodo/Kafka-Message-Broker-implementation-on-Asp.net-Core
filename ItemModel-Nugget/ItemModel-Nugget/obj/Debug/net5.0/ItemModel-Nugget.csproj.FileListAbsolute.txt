@@ -1,0 +1,12 @@
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\bin\Debug\net5.0\ItemModel-Nugget.deps.json
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\bin\Debug\net5.0\ItemModel-Nugget.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\bin\Debug\net5.0\ref\ItemModel-Nugget.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\bin\Debug\net5.0\ItemModel-Nugget.pdb
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.csprojAssemblyReference.cache
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.GeneratedMSBuildEditorConfig.editorconfig
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.AssemblyInfoInputs.cache
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.AssemblyInfo.cs
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.csproj.CoreCompileInputs.cache
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ref\ItemModel-Nugget.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\ItemModel-Nugget\ItemModel-Nugget\obj\Debug\net5.0\ItemModel-Nugget.pdb

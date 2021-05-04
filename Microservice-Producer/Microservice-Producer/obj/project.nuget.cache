@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "CQSWQdPuqC898PTjLTKEduvXlRTpBg8VvDIN3YhJMIWtbEzwMoYIUZqR2jr4MfK1TSfAjMlNO+8WiYanUIKDJg==",
+  "dgSpecHash": "XAeyXWoWtOA0NtCEwsxqawMhQ1Od7BqlAZaLyd1A/EBYH628NFkTECdK4wcbOYxN2fRSaHOuHeXcjxwZAzKALg==",
   "success": true,
   "projectFilePath": "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\Microservice-Producer\\Microservice-Producer\\Microservice-Producer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\confluent.kafka\\1.7.0-rc4\\confluent.kafka.1.7.0-rc4.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\itemmodel-nugget\\1.0.0\\itemmodel-nugget.1.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\librdkafka.redist\\1.7.0-rc4\\librdkafka.redist.1.7.0-rc4.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.configuration\\2.0.0\\microsoft.extensions.configuration.2.0.0.nupkg.sha512",

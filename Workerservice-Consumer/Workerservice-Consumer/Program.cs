@@ -54,14 +54,7 @@ namespace Workerservice_Consumer
             return options;
         }
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args).UseSerilog()/*UseSerilog((_, config) =>
-            {
-                config
-                    .MinimumLevel.Information()
-                    .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                    .Enrich.FromLogContext()
-                    .WriteTo.MongoDB(MongoDBURL(args).ConnectionString + "/" + MongoDBURL(args).Database, collectionName: MongoDBURL(args).Collection);
-            })*/
+            Host.CreateDefaultBuilder(args).UseSerilog()
                 .ConfigureServices((hostContext, services) =>
                 {
                     services.AddHostedService<Worker>();

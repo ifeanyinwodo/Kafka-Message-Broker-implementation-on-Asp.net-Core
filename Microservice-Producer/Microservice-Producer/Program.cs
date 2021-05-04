@@ -1,4 +1,4 @@
-using Microservice_Producer.Model;
+
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -39,30 +39,10 @@ namespace Microservice_Producer
                 Log.CloseAndFlush();
             }
         }
-        public static MongoOptions MongoDBURL(string[] args)
-        {
-
-            var config = new ConfigurationBuilder()
-           .SetBasePath(Directory.GetCurrentDirectory())
-           .AddJsonFile($"appsettings.json", optional: true, reloadOnChange: true)
-           .AddCommandLine(args)
-           .Build();
-
-            var options = new MongoOptions();
-            var section = config.GetSection("AppLogRepository");
-            section.Bind(options);
-            return options;
-        }
+        
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args).UseSerilog()
-             /*.UseSerilog((_, config) =>
-             {
-                 config
-                     .MinimumLevel.Information()
-                     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
-                     .Enrich.FromLogContext()
-                     .WriteTo.MongoDB(MongoDBURL(args).ConnectionString + "/" + MongoDBURL(args).Database, collectionName: MongoDBURL(args).Collection);
-             })*/
+            
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
