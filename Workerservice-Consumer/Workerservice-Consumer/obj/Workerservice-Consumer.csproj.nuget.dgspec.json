@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\ItemModel-Nugget\\ItemModel-Nugget\\bin\\Debug": {},
           "D:\\microservice\\SAGA\\localsystem": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -45,6 +46,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.7.0-RC4, )"
+            },
+            "ItemModel-Nugget": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.Extensions.Hosting": {
               "target": "Package",
               "version": "[5.0.0, )"
@@ -56,22 +65,6 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[4.1.0, )"
-            },
-            "Serilog.Enrichers.Environment": {
-              "target": "Package",
-              "version": "[2.2.0-dev-00761, )"
-            },
-            "Serilog.Enrichers.Process": {
-              "target": "Package",
-              "version": "[2.0.2-dev-00731, )"
-            },
-            "Serilog.Enrichers.Thread": {
-              "target": "Package",
-              "version": "[3.2.0-dev-00747, )"
-            },
-            "Serilog.Settings.Configuration": {
-              "target": "Package",
-              "version": "[3.2.0-dev-00239, )"
             },
             "Serilog.Sinks.MongoDB": {
               "target": "Package",
