@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using Microservice_Producer.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -52,7 +53,7 @@ namespace Microservice_Producer
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseMiddleware<ReqRespLoggingMiddleware>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

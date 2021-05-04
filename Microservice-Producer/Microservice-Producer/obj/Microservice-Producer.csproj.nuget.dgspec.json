@@ -49,9 +49,37 @@
               "target": "Package",
               "version": "[1.7.0-RC4, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.0-beta1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0-dev-00761, )"
+            },
+            "Serilog.Enrichers.Process": {
+              "target": "Package",
+              "version": "[2.0.2-dev-00731, )"
+            },
+            "Serilog.Enrichers.Thread": {
+              "target": "Package",
+              "version": "[3.2.0-dev-00747, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.2.0-dev-00239, )"
+            },
+            "Serilog.Sinks.MongoDB": {
+              "target": "Package",
+              "version": "[4.1.0-dev-00069, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
