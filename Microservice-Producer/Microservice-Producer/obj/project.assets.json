@@ -590,6 +590,20 @@
           "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {}
         }
       },
+      "Serilog.Sinks.Confluent.Kafka/1.9.2": {
+        "type": "package",
+        "dependencies": {
+          "Confluent.Kafka": "1.6.3",
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.PeriodicBatching": "2.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Kafka.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Kafka.dll": {}
+        }
+      },
       "Serilog.Sinks.Console/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -646,7 +660,7 @@
           "lib/netstandard1.5/Serilog.Sinks.MongoDB.dll": {}
         }
       },
-      "Serilog.Sinks.PeriodicBatching/2.1.0": {
+      "Serilog.Sinks.PeriodicBatching/2.3.0": {
         "type": "package",
         "dependencies": {
           "Serilog": "2.0.0",
@@ -654,10 +668,10 @@
           "System.Threading.Timer": "4.0.1"
         },
         "compile": {
-          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
+          "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
+          "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {}
         }
       },
       "SharpCompress/0.23.0": {
@@ -1941,6 +1955,18 @@
         "serilog.settings.configuration.nuspec"
       ]
     },
+    "Serilog.Sinks.Confluent.Kafka/1.9.2": {
+      "sha512": "V0YzhCThkMiT9eo+vN6pp5MtX09cFYtFQFX3efRafzxWc9L8hHrIWi4cYAPQg01hq3v9nP5AZ2jso3wY91sVqg==",
+      "type": "package",
+      "path": "serilog.sinks.confluent.kafka/1.9.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Serilog.Sinks.Kafka.dll",
+        "serilog.sinks.confluent.kafka.1.9.2.nupkg.sha512",
+        "serilog.sinks.confluent.kafka.nuspec"
+      ]
+    },
     "Serilog.Sinks.Console/3.1.1": {
       "sha512": "56mI5AqvyF/i/c2451nvV71kq370XOCE4Uu5qiaJ295sOhMb9q3BWwG7mWLOVSnmpWiq0SBT3SXfgRXGNP6vzA==",
       "type": "package",
@@ -2013,10 +2039,10 @@
         "serilog.sinks.mongodb.nuspec"
       ]
     },
-    "Serilog.Sinks.PeriodicBatching/2.1.0": {
-      "sha512": "FshW9PfIdLRfFCCoyU5Z8YKg6axd0ufy9pbcgTyf/mOIZjt78zVl5lZAjUBI2YDHncS3gtH/Bf0YKqMCWh2/0Q==",
+    "Serilog.Sinks.PeriodicBatching/2.3.0": {
+      "sha512": "UYKSjTMTlUY9T3OgzMmLDLD+z0qPfgvq/RvG0rKfyz+O+Zrjw3X/Xpv14J4WMcGVsOjUaR+k8n2MdmqVpJtI6A==",
       "type": "package",
-      "path": "serilog.sinks.periodicbatching/2.1.0",
+      "path": "serilog.sinks.periodicbatching/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2026,7 +2052,9 @@
         "lib/netstandard1.1/Serilog.Sinks.PeriodicBatching.xml",
         "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll",
         "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.xml",
-        "serilog.sinks.periodicbatching.2.1.0.nupkg.sha512",
+        "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll",
+        "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.xml",
+        "serilog.sinks.periodicbatching.2.3.0.nupkg.sha512",
         "serilog.sinks.periodicbatching.nuspec"
       ]
     },
@@ -3895,6 +3923,7 @@
       "Serilog.Enrichers.Process >= 2.0.2-dev-00731",
       "Serilog.Enrichers.Thread >= 3.2.0-dev-00747",
       "Serilog.Settings.Configuration >= 3.2.0-dev-00239",
+      "Serilog.Sinks.Confluent.Kafka >= 1.9.2",
       "Serilog.Sinks.MongoDB >= 4.1.0-dev-00069",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -3980,6 +4009,10 @@
           "Serilog.Settings.Configuration": {
             "target": "Package",
             "version": "[3.2.0-dev-00239, )"
+          },
+          "Serilog.Sinks.Confluent.Kafka": {
+            "target": "Package",
+            "version": "[1.9.2, )"
           },
           "Serilog.Sinks.MongoDB": {
             "target": "Package",

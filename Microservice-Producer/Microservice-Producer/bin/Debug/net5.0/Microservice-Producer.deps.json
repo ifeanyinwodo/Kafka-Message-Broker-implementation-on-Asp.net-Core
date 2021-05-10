@@ -34,6 +34,7 @@
       "Microservice-Producer/1.0.0": {
         "dependencies": {
           "Confluent.Kafka": "1.7.0-RC4",
+          "ItemModel-Nugget": "1.0.0",
           "MongoDB.Driver": "2.13.0-beta1",
           "Newtonsoft.Json": "13.0.1",
           "Serilog.AspNetCore": "4.1.0",
@@ -41,6 +42,7 @@
           "Serilog.Enrichers.Process": "2.0.2-dev-00731",
           "Serilog.Enrichers.Thread": "3.2.0-dev-00747",
           "Serilog.Settings.Configuration": "3.2.0-dev-00239",
+          "Serilog.Sinks.Confluent.Kafka": "1.9.2",
           "Serilog.Sinks.MongoDB": "4.1.0-dev-00069",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -358,6 +360,17 @@
         },
         "compile": {
           "lib/netstandard2.1/DnsClient.dll": {}
+        }
+      },
+      "ItemModel-Nugget/1.0.0": {
+        "runtime": {
+          "lib/net5.0/ItemModel-Nugget.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/ItemModel-Nugget.dll": {}
         }
       },
       "librdkafka.redist/1.7.0-RC4": {
@@ -808,6 +821,22 @@
           "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {}
         }
       },
+      "Serilog.Sinks.Confluent.Kafka/1.9.2": {
+        "dependencies": {
+          "Confluent.Kafka": "1.7.0-RC4",
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.PeriodicBatching": "2.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Kafka.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Kafka.dll": {}
+        }
+      },
       "Serilog.Sinks.Console/3.1.1": {
         "dependencies": {
           "Serilog": "2.10.0",
@@ -860,7 +889,7 @@
         "dependencies": {
           "MongoDB.Driver": "2.13.0-beta1",
           "Serilog": "2.10.0",
-          "Serilog.Sinks.PeriodicBatching": "2.1.0"
+          "Serilog.Sinks.PeriodicBatching": "2.3.0"
         },
         "runtime": {
           "lib/netstandard1.5/Serilog.Sinks.MongoDB.dll": {
@@ -872,20 +901,20 @@
           "lib/netstandard1.5/Serilog.Sinks.MongoDB.dll": {}
         }
       },
-      "Serilog.Sinks.PeriodicBatching/2.1.0": {
+      "Serilog.Sinks.PeriodicBatching/2.3.0": {
         "dependencies": {
           "Serilog": "2.10.0",
           "System.Collections.Concurrent": "4.0.12",
           "System.Threading.Timer": "4.0.1"
         },
         "runtime": {
-          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {
+          "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.0.0"
+            "fileVersion": "2.3.0.0"
           }
         },
         "compile": {
-          "lib/netstandard1.2/Serilog.Sinks.PeriodicBatching.dll": {}
+          "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {}
         }
       },
       "SharpCompress/0.23.0": {
@@ -2905,6 +2934,13 @@
       "path": "dnsclient/1.4.0",
       "hashPath": "dnsclient.1.4.0.nupkg.sha512"
     },
+    "ItemModel-Nugget/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-akGIYEc5yyrNiGe6jHtn3EKZ3hsZl6y06f9My5vVmSABjiF+n2XtH90JHbJCAtJdFk4wo7kwaO79VN2PyVGMjA==",
+      "path": "itemmodel-nugget/1.0.0",
+      "hashPath": "itemmodel-nugget.1.0.0.nupkg.sha512"
+    },
     "librdkafka.redist/1.7.0-RC4": {
       "type": "package",
       "serviceable": true,
@@ -3150,6 +3186,13 @@
       "path": "serilog.settings.configuration/3.2.0-dev-00239",
       "hashPath": "serilog.settings.configuration.3.2.0-dev-00239.nupkg.sha512"
     },
+    "Serilog.Sinks.Confluent.Kafka/1.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V0YzhCThkMiT9eo+vN6pp5MtX09cFYtFQFX3efRafzxWc9L8hHrIWi4cYAPQg01hq3v9nP5AZ2jso3wY91sVqg==",
+      "path": "serilog.sinks.confluent.kafka/1.9.2",
+      "hashPath": "serilog.sinks.confluent.kafka.1.9.2.nupkg.sha512"
+    },
     "Serilog.Sinks.Console/3.1.1": {
       "type": "package",
       "serviceable": true,
@@ -3178,12 +3221,12 @@
       "path": "serilog.sinks.mongodb/4.1.0-dev-00069",
       "hashPath": "serilog.sinks.mongodb.4.1.0-dev-00069.nupkg.sha512"
     },
-    "Serilog.Sinks.PeriodicBatching/2.1.0": {
+    "Serilog.Sinks.PeriodicBatching/2.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FshW9PfIdLRfFCCoyU5Z8YKg6axd0ufy9pbcgTyf/mOIZjt78zVl5lZAjUBI2YDHncS3gtH/Bf0YKqMCWh2/0Q==",
-      "path": "serilog.sinks.periodicbatching/2.1.0",
-      "hashPath": "serilog.sinks.periodicbatching.2.1.0.nupkg.sha512"
+      "sha512": "sha512-UYKSjTMTlUY9T3OgzMmLDLD+z0qPfgvq/RvG0rKfyz+O+Zrjw3X/Xpv14J4WMcGVsOjUaR+k8n2MdmqVpJtI6A==",
+      "path": "serilog.sinks.periodicbatching/2.3.0",
+      "hashPath": "serilog.sinks.periodicbatching.2.3.0.nupkg.sha512"
     },
     "SharpCompress/0.23.0": {
       "type": "package",

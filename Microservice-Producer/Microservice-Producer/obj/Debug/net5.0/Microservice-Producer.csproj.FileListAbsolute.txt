@@ -74,3 +74,6 @@ D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\appsettingsMDB.json
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\ItemModel-Nugget.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\Serilog.Sinks.Kafka.dll

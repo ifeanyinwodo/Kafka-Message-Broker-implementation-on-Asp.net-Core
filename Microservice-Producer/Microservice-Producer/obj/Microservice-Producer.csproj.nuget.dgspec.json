@@ -82,6 +82,10 @@
               "target": "Package",
               "version": "[3.2.0-dev-00239, )"
             },
+            "Serilog.Sinks.Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.9.2, )"
+            },
             "Serilog.Sinks.MongoDB": {
               "target": "Package",
               "version": "[4.1.0-dev-00069, )"

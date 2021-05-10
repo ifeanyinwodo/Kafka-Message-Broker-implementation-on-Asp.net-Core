@@ -1,6 +1,8 @@
 ﻿using Confluent.Kafka;
-using Microservice_Producer.Model;
+using ItemModel_Nugget;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -17,21 +19,26 @@ namespace Microservice_Producer.Controllers
     {
 
         private  ProducerConfig _producerConfig;
-
-        public OrderController(ProducerConfig producerConfig)
+        private readonly string _topic;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger<OrderController> _logger;
+        public OrderController(ProducerConfig producerConfig, ILogger<OrderController> logger, IConfiguration configuration)
         {
             this._producerConfig = producerConfig;
+            _topic = configuration.GetSection("producer").GetSection("Topic").Value;
+            _logger = logger;
         }
         
 
         // POST api/<OrderController>
         [HttpPost]
-        public async Task<IActionResult> Post(string topic, [FromBody] Item item)
+        public async Task<IActionResult> Post( [FromBody] Item item)
         {
+            
             string serializeItem = JsonConvert.SerializeObject(item);
             using(var producer = new ProducerBuilder<Null, string>(_producerConfig).Build())
             {
-                await producer.ProduceAsync(topic, new Message<Null, string> { Value = serializeItem });
+                await producer.ProduceAsync(_topic, new Message<Null, string> { Value = serializeItem });
                
                 producer.Flush(TimeSpan.FromSeconds(10));
                 return Ok(true);
