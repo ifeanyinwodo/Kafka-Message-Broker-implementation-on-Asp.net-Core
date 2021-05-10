@@ -34,9 +34,9 @@ namespace Workerservice_Consumer
         {
             try
             {
-                File.WriteAllText(@"d:\logstash\product.log", "1");
+                
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            File.WriteAllText(@"d:\logstash\product.log", "2");
+           
             var config = new ConsumerConfig
                 {
                     GroupId = _groupId,
@@ -45,7 +45,7 @@ namespace Workerservice_Consumer
                     
                     
                 };
-            File.WriteAllText(@"d:\logstash\product.log", "3");
+          
             using (var consumer = new ConsumerBuilder<Null, string>(config).Build())
                 {
                     consumer.Subscribe(_topic);

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oyP8yg9GtjL6qNufhfiLffxJIB3nshKFDS0SL+Jfc1Tx56nwJ0WdAb1Bq/jsGeJrsMgc4iL3L1az7huLMk9xjg==",
+  "dgSpecHash": "ltPYwrcnStKQ5KnCxEawdBg8IAjgASXLf0wLCQ52Uvj8aXwoG9bHdur2Xspr648HMbGHLTv8ADce6mvk3XxTlA==",
   "success": true,
   "projectFilePath": "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\Workerservice-Consumer\\Workerservice-Consumer\\Workerservice-Consumer.csproj",
   "expectedPackageFiles": [
