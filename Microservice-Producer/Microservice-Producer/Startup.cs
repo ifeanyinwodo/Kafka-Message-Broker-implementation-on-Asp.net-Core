@@ -1,5 +1,6 @@
 using Confluent.Kafka;
 using Microservice_Producer.Logger;
+using Microservice_Producer.Metrics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -31,6 +32,7 @@ namespace Microservice_Producer
             var producerConfig = new ProducerConfig();
             Configuration.Bind("producer", producerConfig);
             services.AddSingleton<ProducerConfig>(producerConfig);
+            services.AddSingleton<IMetricsRegistry, MetricsRegistry>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

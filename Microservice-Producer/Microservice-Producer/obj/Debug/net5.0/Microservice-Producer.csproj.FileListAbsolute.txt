@@ -77,3 +77,7 @@ D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\appsettingsMDB.json
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\ItemModel-Nugget.dll
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\Serilog.Sinks.Kafka.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\Elasticsearch.Net.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\Serilog.Formatting.Elasticsearch.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\Serilog.Sinks.Elasticsearch.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Microservice-Producer\Microservice-Producer\bin\Debug\net5.0\SerilogMetrics.dll

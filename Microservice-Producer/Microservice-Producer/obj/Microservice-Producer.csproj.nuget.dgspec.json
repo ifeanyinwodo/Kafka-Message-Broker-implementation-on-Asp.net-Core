@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\microservice\\Azure-Service-Bus-Message-Broker-Implementation-ASP.Net-Core\\ItemModel-Nugget\\ItemModel-Nugget\\bin\\Debug": {},
           "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\ItemModel-Nugget\\ItemModel-Nugget\\bin\\Debug": {},
           "D:\\microservice\\SAGA\\localsystem": {},
           "https://api.nuget.org/v3/index.json": {}
@@ -78,6 +79,10 @@
               "target": "Package",
               "version": "[3.2.0-dev-00747, )"
             },
+            "Serilog.Formatting.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.5.0-alpha0003, )"
+            },
             "Serilog.Settings.Configuration": {
               "target": "Package",
               "version": "[3.2.0-dev-00239, )"
@@ -86,9 +91,21 @@
               "target": "Package",
               "version": "[1.9.2, )"
             },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.5.0-alpha0003, )"
+            },
             "Serilog.Sinks.MongoDB": {
               "target": "Package",
               "version": "[4.1.0-dev-00069, )"
+            },
+            "SerilogMetrics": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

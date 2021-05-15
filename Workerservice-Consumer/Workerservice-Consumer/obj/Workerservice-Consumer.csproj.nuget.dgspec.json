@@ -67,13 +67,29 @@
               "target": "Package",
               "version": "[4.1.0, )"
             },
+            "Serilog.Formatting.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.5.0-alpha0003, )"
+            },
             "Serilog.Sinks.Confluent.Kafka": {
               "target": "Package",
               "version": "[1.9.2, )"
             },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.5.0-alpha0003, )"
+            },
             "Serilog.Sinks.MongoDB": {
               "target": "Package",
               "version": "[4.1.0-dev-00069, )"
+            },
+            "SerilogMetrics": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             }
           },
           "imports": [

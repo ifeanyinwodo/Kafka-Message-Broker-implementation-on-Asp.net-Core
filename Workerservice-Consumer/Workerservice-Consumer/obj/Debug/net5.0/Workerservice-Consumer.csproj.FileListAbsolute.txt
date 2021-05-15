@@ -65,3 +65,7 @@ D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservic
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\obj\Debug\net5.0\Workerservice-Consumer.pdb
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\obj\Debug\net5.0\Workerservice-Consumer.genruntimeconfig.cache
 D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\bin\Debug\net5.0\Serilog.Sinks.Kafka.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\bin\Debug\net5.0\Elasticsearch.Net.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\bin\Debug\net5.0\Serilog.Formatting.Elasticsearch.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\bin\Debug\net5.0\Serilog.Sinks.Elasticsearch.dll
+D:\microservice\Kafka-Message-Broker-implementation-on-Asp.net-Core\Workerservice-Consumer\Workerservice-Consumer\bin\Debug\net5.0\SerilogMetrics.dll

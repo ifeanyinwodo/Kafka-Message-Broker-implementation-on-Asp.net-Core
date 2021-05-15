@@ -24,6 +24,20 @@
           "lib/netstandard2.1/DnsClient.dll": {}
         }
       },
+      "Elasticsearch.Net/7.8.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.6.0",
+          "System.Buffers": "4.5.0",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Elasticsearch.Net.dll": {}
+        }
+      },
       "ItemModel-Nugget/1.0.0": {
         "type": "package",
         "compile": {
@@ -111,6 +125,15 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Microsoft.CSharp/4.6.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -576,6 +599,18 @@
           "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {}
         }
       },
+      "Serilog.Formatting.Elasticsearch/8.5.0-alpha0003": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Settings.Configuration/3.2.0-dev-00239": {
         "type": "package",
         "dependencies": {
@@ -631,6 +666,25 @@
           "lib/netstandard2.1/Serilog.Sinks.Debug.dll": {}
         }
       },
+      "Serilog.Sinks.Elasticsearch/8.5.0-alpha0003": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "7.8.1",
+          "Microsoft.CSharp": "4.6.0",
+          "Serilog": "2.8.0",
+          "Serilog.Formatting.Compact": "1.0.0",
+          "Serilog.Formatting.Elasticsearch": "8.5.0-alpha0003",
+          "Serilog.Sinks.File": "4.0.0",
+          "Serilog.Sinks.PeriodicBatching": "2.1.1",
+          "System.Diagnostics.DiagnosticSource": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll": {}
+        }
+      },
       "Serilog.Sinks.File/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -672,6 +726,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.dll": {}
+        }
+      },
+      "SerilogMetrics/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/SerilogMetrics.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/SerilogMetrics.dll": {}
         }
       },
       "SharpCompress/0.23.0": {
@@ -803,6 +869,15 @@
         },
         "compile": {
           "ref/netstandard1.3/_._": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/4.5.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
         }
       },
       "System.Diagnostics.Process/4.1.0": {
@@ -1209,6 +1284,28 @@
         "lib/netstandard2.1/DnsClient.xml"
       ]
     },
+    "Elasticsearch.Net/7.8.1": {
+      "sha512": "vGHlxY72LH8/DcKb/QDpvrIelQIUFxNnXa+HmS/ifX7M7dgwmTpA2i4SagQ65gg7oi088cteUuDl4fKIystg7Q==",
+      "type": "package",
+      "path": "elasticsearch.net/7.8.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elasticsearch.net.7.8.1.nupkg.sha512",
+        "elasticsearch.net.nuspec",
+        "lib/net461/Elasticsearch.Net.dll",
+        "lib/net461/Elasticsearch.Net.pdb",
+        "lib/net461/Elasticsearch.Net.xml",
+        "lib/netstandard2.0/Elasticsearch.Net.dll",
+        "lib/netstandard2.0/Elasticsearch.Net.pdb",
+        "lib/netstandard2.0/Elasticsearch.Net.xml",
+        "lib/netstandard2.1/Elasticsearch.Net.dll",
+        "lib/netstandard2.1/Elasticsearch.Net.pdb",
+        "lib/netstandard2.1/Elasticsearch.Net.xml",
+        "license.txt",
+        "nuget-icon.png"
+      ]
+    },
     "ItemModel-Nugget/1.0.0": {
       "sha512": "akGIYEc5yyrNiGe6jHtn3EKZ3hsZl6y06f9My5vVmSABjiF+n2XtH90JHbJCAtJdFk4wo7kwaO79VN2PyVGMjA==",
       "type": "package",
@@ -1259,6 +1356,75 @@
         "runtimes/win-x86/native/msvcp120.dll",
         "runtimes/win-x86/native/msvcr120.dll",
         "runtimes/win-x86/native/zlib.dll"
+      ]
+    },
+    "Microsoft.CSharp/4.6.0": {
+      "sha512": "kxn3M2rnAGy5N5DgcIwcE8QTePWU/XiYcQVzn9HqTls2NKluVzVSmVWRjK7OUPWbljCXuZxHyhEz9kPRIQeXow==",
+      "type": "package",
+      "path": "microsoft.csharp/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/netcore50/Microsoft.CSharp.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.3/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/uap10.0.16299/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "microsoft.csharp.4.6.0.nupkg.sha512",
+        "microsoft.csharp.nuspec",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/Microsoft.CSharp.dll",
+        "ref/netcore50/Microsoft.CSharp.xml",
+        "ref/netcore50/de/Microsoft.CSharp.xml",
+        "ref/netcore50/es/Microsoft.CSharp.xml",
+        "ref/netcore50/fr/Microsoft.CSharp.xml",
+        "ref/netcore50/it/Microsoft.CSharp.xml",
+        "ref/netcore50/ja/Microsoft.CSharp.xml",
+        "ref/netcore50/ko/Microsoft.CSharp.xml",
+        "ref/netcore50/ru/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
+        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/Microsoft.CSharp.dll",
+        "ref/netstandard1.0/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
+        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
+        "ref/netstandard2.0/Microsoft.CSharp.dll",
+        "ref/netstandard2.0/Microsoft.CSharp.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/uap10.0.16299/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
@@ -1937,6 +2103,23 @@
         "serilog.formatting.compact.nuspec"
       ]
     },
+    "Serilog.Formatting.Elasticsearch/8.5.0-alpha0003": {
+      "sha512": "3IFN0dNuNW0GLfFMo3cpHhN/JW3E/g+iyO7E4m3bdDBk8TEyZ7KBD+FGp0V1G0JEKZ5c0RfY+PlNKRLU5zypxA==",
+      "type": "package",
+      "path": "serilog.formatting.elasticsearch/8.5.0-alpha0003",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Formatting.Elasticsearch.dll",
+        "lib/net45/Serilog.Formatting.Elasticsearch.xml",
+        "lib/netstandard1.3/Serilog.Formatting.Elasticsearch.dll",
+        "lib/netstandard1.3/Serilog.Formatting.Elasticsearch.xml",
+        "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.dll",
+        "lib/netstandard2.0/Serilog.Formatting.Elasticsearch.xml",
+        "serilog.formatting.elasticsearch.8.5.0-alpha0003.nupkg.sha512",
+        "serilog.formatting.elasticsearch.nuspec"
+      ]
+    },
     "Serilog.Settings.Configuration/3.2.0-dev-00239": {
       "sha512": "4CS+i0mruoJ2E6BKBF9+2ZEIzl1V8nu04P/GX9GsV+400G3fzPXpjqyz/wku7odG1Gnrx+5s+Qitby0Q9IjDbQ==",
       "type": "package",
@@ -2006,6 +2189,21 @@
         "serilog.sinks.debug.nuspec"
       ]
     },
+    "Serilog.Sinks.Elasticsearch/8.5.0-alpha0003": {
+      "sha512": "xGZhoBg3qLcNk8CW1RhHRJZptCtrBBN+lSm+lN5kwIQQOdLRdLcmt9MBcY6/BFnBwFlljZ1J07ofmSGKkG4UAg==",
+      "type": "package",
+      "path": "serilog.sinks.elasticsearch/8.5.0-alpha0003",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net461/Serilog.Sinks.Elasticsearch.dll",
+        "lib/net461/Serilog.Sinks.Elasticsearch.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Elasticsearch.xml",
+        "serilog.sinks.elasticsearch.8.5.0-alpha0003.nupkg.sha512",
+        "serilog.sinks.elasticsearch.nuspec"
+      ]
+    },
     "Serilog.Sinks.File/4.1.0": {
       "sha512": "U0b34w+ZikbqWEZ3ui7BdzxY/19zwrdhLtI3o6tfmLdD3oXxg7n2TZJjwCCTlKPgRuYic9CBWfrZevbb70mTaw==",
       "type": "package",
@@ -2056,6 +2254,27 @@
         "lib/netstandard2.0/Serilog.Sinks.PeriodicBatching.xml",
         "serilog.sinks.periodicbatching.2.3.0.nupkg.sha512",
         "serilog.sinks.periodicbatching.nuspec"
+      ]
+    },
+    "SerilogMetrics/2.1.0": {
+      "sha512": "LoPcCh0nAEEfwt7pLw6n+jYH9PWL7euYnX2bSek8IhRlfRaGmkfS1IMhzN+TouC1CS9oJKe78KJUZ7ylPVX2Hw==",
+      "type": "package",
+      "path": "serilogmetrics/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/SerilogMetrics.dll",
+        "lib/net45/SerilogMetrics.xml",
+        "lib/net46/SerilogMetrics.dll",
+        "lib/net46/SerilogMetrics.xml",
+        "lib/netstandard1.0/SerilogMetrics.dll",
+        "lib/netstandard1.0/SerilogMetrics.xml",
+        "lib/netstandard1.3/SerilogMetrics.dll",
+        "lib/netstandard1.3/SerilogMetrics.xml",
+        "lib/netstandard2.0/SerilogMetrics.dll",
+        "lib/netstandard2.0/SerilogMetrics.xml",
+        "serilogmetrics.2.1.0.nupkg.sha512",
+        "serilogmetrics.nuspec"
       ]
     },
     "SharpCompress/0.23.0": {
@@ -2408,6 +2627,31 @@
         "ref/xamarinwatchos10/_._",
         "system.diagnostics.debug.4.0.11.nupkg.sha512",
         "system.diagnostics.debug.nuspec"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/4.5.1": {
+      "sha512": "zCno/m44ymWhgLFh7tELDG9587q0l/EynPM0m4KgLaWQbz/TEKvNRX2YT5ip2qXW/uayifQ2ZqbnErsKJ4lYrQ==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net45/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net46/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net46/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.1/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.xml",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.dll",
+        "lib/portable-net45+win8+wpa81/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Diagnostics.Process/4.1.0": {
@@ -3922,9 +4166,13 @@
       "Serilog.Enrichers.Environment >= 2.2.0-dev-00761",
       "Serilog.Enrichers.Process >= 2.0.2-dev-00731",
       "Serilog.Enrichers.Thread >= 3.2.0-dev-00747",
+      "Serilog.Formatting.Elasticsearch >= 8.5.0-alpha0003",
       "Serilog.Settings.Configuration >= 3.2.0-dev-00239",
       "Serilog.Sinks.Confluent.Kafka >= 1.9.2",
+      "Serilog.Sinks.Debug >= 2.0.0",
+      "Serilog.Sinks.Elasticsearch >= 8.5.0-alpha0003",
       "Serilog.Sinks.MongoDB >= 4.1.0-dev-00069",
+      "SerilogMetrics >= 2.1.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -3954,6 +4202,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\microservice\\Azure-Service-Bus-Message-Broker-Implementation-ASP.Net-Core\\ItemModel-Nugget\\ItemModel-Nugget\\bin\\Debug": {},
         "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\ItemModel-Nugget\\ItemModel-Nugget\\bin\\Debug": {},
         "D:\\microservice\\SAGA\\localsystem": {},
         "https://api.nuget.org/v3/index.json": {}
@@ -4006,6 +4255,10 @@
             "target": "Package",
             "version": "[3.2.0-dev-00747, )"
           },
+          "Serilog.Formatting.Elasticsearch": {
+            "target": "Package",
+            "version": "[8.5.0-alpha0003, )"
+          },
           "Serilog.Settings.Configuration": {
             "target": "Package",
             "version": "[3.2.0-dev-00239, )"
@@ -4014,9 +4267,21 @@
             "target": "Package",
             "version": "[1.9.2, )"
           },
+          "Serilog.Sinks.Debug": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "Serilog.Sinks.Elasticsearch": {
+            "target": "Package",
+            "version": "[8.5.0-alpha0003, )"
+          },
           "Serilog.Sinks.MongoDB": {
             "target": "Package",
             "version": "[4.1.0-dev-00069, )"
+          },
+          "SerilogMetrics": {
+            "target": "Package",
+            "version": "[2.1.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
