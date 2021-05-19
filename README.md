@@ -5,11 +5,12 @@ This Solution demonstrates the implementation:
 2. Implementation of an ASP.net Core WebAPI.
 3. Implementation of .net Core Worker Service.
 4. Implementation of .net Core class library and packaging same as nugget.
-5. Implementation of Logging Using Serilog With Serilog Elasticsearch formation.
+5. Implementation of Logging Using Serilog With Serilog Elasticsearch formatting.
 6. Integrating the Serilog logging with Kafka
 7. Integrating Kafka with Logstash for onward ELK Implementation.
 
 Feel free to reach out to me for clarification or assistance.
+
 
 
 
