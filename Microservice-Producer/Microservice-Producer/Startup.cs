@@ -55,7 +55,7 @@ namespace Microservice_Producer
             app.UseRouting();
 
             app.UseAuthorization();
-           // app.UseMiddleware<ReqRespLoggingMiddleware>();
+           app.UseMiddleware<ReqRespLoggingMiddleware>();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

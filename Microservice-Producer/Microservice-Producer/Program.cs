@@ -27,8 +27,8 @@ namespace Microservice_Producer
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(config)
                 .CreateLogger();
-
-             ConfigureLogging();
+            /**enable to log directly to Elastic search..*/
+             //ConfigureLogging();
             try
             {
                 Log.Information("Application Starting.");

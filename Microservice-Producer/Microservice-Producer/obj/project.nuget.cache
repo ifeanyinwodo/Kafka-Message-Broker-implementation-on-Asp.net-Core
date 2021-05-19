@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i2KUsDHZrKHFUArJexMQg1MbPJpCTm7sFwmjg3uAQEtePnLWEzdW3jdH8hlMyFsMDy44WrH2JTZN+NnQBAryRw==",
+  "dgSpecHash": "XEE7/eBml67VCv+t6f2VBacKCWyXuIsuY6DOxUxVKk+m77YNKR6Jb7qPapmXeqc54C+DPwwUr3wOP6tXMVQL+w==",
   "success": true,
   "projectFilePath": "D:\\microservice\\Kafka-Message-Broker-implementation-on-Asp.net-Core\\Microservice-Producer\\Microservice-Producer\\Microservice-Producer.csproj",
   "expectedPackageFiles": [

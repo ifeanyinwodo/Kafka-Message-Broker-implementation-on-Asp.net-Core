@@ -26,7 +26,7 @@ namespace Workerservice_Consumer
 
         public Worker(ILogger<Worker> logger, IConfiguration configuration)
         {
-            File.WriteAllText(@"D:\logstash\product.log", "1");
+            
             _configuration = configuration;
             _groupId = configuration.GetSection("consumer").GetSection("GroupId").Value;
             _bootstrapServers = configuration.GetSection("consumer").GetSection("Bootstrapservers").Value;

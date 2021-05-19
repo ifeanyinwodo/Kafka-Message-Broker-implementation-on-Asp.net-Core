@@ -38,7 +38,7 @@ namespace Workerservice_Consumer
             }
             catch (Exception ex)
             {
-                File.WriteAllText(@"D:\logstash\product1.log", ex.ToString());
+                
                 Log.Fatal(ex, "The Application failed to start.");
             }
             finally
