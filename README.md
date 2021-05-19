@@ -1,6 +1,6 @@
 # Kafka-Message-Broker-implementation-on-Asp.net-Core
 
-This Solution demonstrates the implementation:
+This Solution demonstrates the:
 1. Implementation of a Kafka(Kafka and Zookeeper) Message broker for an ASP.Net Core Solution.
 2. Implementation of an ASP.net Core WebAPI.
 3. Implementation of .net Core Worker Service.
